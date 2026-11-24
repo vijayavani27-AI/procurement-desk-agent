@@ -114,7 +114,10 @@ i.e. the nearest rupee with .5 rounding up (`round_half_up()`).
 
 ### 2.5 Approval limit
 
-$$p \times q \le \text{approval limit} \Rightarrow \texttt{ACCEPT}, \qquad p \times q > \text{approval limit} \Rightarrow \texttt{ESCALATE:OVER\_APPROVAL\_LIMIT}$$
+$$p \times q \le \text{approval limit}$$
+
+If this holds the agent returns `ACCEPT:ACCEPTABLE_PRICE:`, otherwise `ESCALATE:OVER_APPROVAL_LIMIT:`. The limit in
+force comes from the category page, then amendments (e.g. Headsets ₹3,20,000 from 2026-11-09).
 
 For subscriptions *p* is already one billing period (per year or per month, the category's unit), as required by
 `approval-limits.md`.
