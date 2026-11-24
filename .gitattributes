@@ -1,0 +1,2 @@
+# keep CSV files byte-for-byte identical across Windows / Linux / macOS checkouts
+*.csv -text
