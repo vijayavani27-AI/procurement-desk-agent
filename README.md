@@ -12,6 +12,7 @@ procurement playbook, and outputs `ACTION:REASON:COUNTER_PRICE`.
 | Kaggle public leaderboard | **1.00000** |
 | Runtime, all 2,000 threads | ≈ 2 s on a laptop CPU |
 | LLM / API calls at run time | **0** |
+| Live demo UI | **https://procurement-desk-vijayavani135.streamlit.app** |
 
 ---
 
@@ -362,7 +363,7 @@ python agent.py --data data --out my_submission.csv
 python -c "import filecmp; print(filecmp.cmp('my_submission.csv', 'submission.csv', shallow=False))"
 ```
 
-Optional UI:
+Optional UI (also deployed at https://procurement-desk-vijayavani135.streamlit.app, from this repository's `app.py`):
 
 ```bash
 pip install -r requirements.txt
